@@ -1,14 +1,16 @@
-# Use uma imagem base do OpenJDK 17 (ou outra versão do JDK que você esteja usando)
-FROM openjdk:17-jdk-alpine
+FROM ubuntu:latest AS build
 
-# Define o diretório de trabalho dentro do contêiner
-WORKDIR /app
+RUN apt-get update
+RUN apt-get install openjdk-17-jdk -y
+COPY . .
 
-# Copia o arquivo JAR gerado para o diretório de trabalho do contêiner
-COPY target/*.jar app.jar
+RUN apt-get install maven -y
+RUN mvn clean install 
 
-# Exponha a porta 8080 para o tráfego externo
+FROM openjdk:17-jdk-slim
+
 EXPOSE 8080
 
-# Comando para executar a aplicação
-ENTRYPOINT ["java", "-jar", "app.jar"]
+COPY --from=build /target/deploy_render-1.0.0.jar app.jar
+
+ENTRYPOINT [ "java", "-jar", "app.jar" ]
