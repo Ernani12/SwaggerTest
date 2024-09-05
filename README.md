@@ -39,7 +39,7 @@ Esta aplicação é um sistema de gerenciamento de alunos de uma escola, desenvo
 │   │       └── data.sql         # Dados iniciais para a base H2
 │   └── test/java/com/example/alunos  # Testes unitários e de integração
 └── pom.xml                      # Arquivo de dependências do Maven
-
+```
 
 ## 🗂️ Endpoints da API
 
@@ -50,6 +50,7 @@ Esta aplicação é um sistema de gerenciamento de alunos de uma escola, desenvo
 | POST        | `/api/alunos`        | Cria um novo aluno                  | `curl -X POST -H "Content-Type: application/json" -d '{"nome": "João", "idade": 20, "notaPrimeiroSemestre": 8.5, "notaSegundoSemestre": 9.0, "nomeProfessor": "Maria", "numeroSala": 101}' http://localhost:8080/api/alunos` |
 | PUT         | `/api/alunos/{id}`   | Atualiza as informações de um aluno | `curl -X PUT -H "Content-Type: application/json" -d '{"nome": "João", "idade": 21}' http://localhost:8080/api/alunos/1`                                                     |
 | DELETE      | `/api/alunos/{id}`   | Deleta um aluno                     | `curl -X DELETE http://localhost:8080/api/alunos/1`                                                                                                                         |
+
 
 
 bash
