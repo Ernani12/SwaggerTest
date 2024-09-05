@@ -1,28 +1,32 @@
 
-📚 Aplicação CRUD de Alunos - Spring Boot
-Esta aplicação é um sistema de gerenciamento de alunos de uma escola, desenvolvido utilizando o framework Spring Boot. A aplicação possui um CRUD completo (Create, Read, Update, Delete) para gerenciar as informações dos alunos, incluindo nome, idade, notas dos semestres, nome do professor, e número da sala. O banco de dados H2 é utilizado para o desenvolvimento local, e o MySQL pode ser usado em produção.
+# 📚 Aplicação CRUD de Alunos - Spring Boot
 
-🚀 Tecnologias Utilizadas
-Tecnologia	Versão	Descrição
-Spring Boot	3.3.3	Framework Java que simplifica a criação de aplicações stand-alone, de produção pronta e robusta.
-Maven	3.8.1	Ferramenta de automação de compilação para projetos Java.
-H2 Database	2.1.210	Banco de dados em memória para desenvolvimento e testes rápidos.
-MySQL	8.0.33	Banco de dados relacional utilizado em produção.
-Lombok	1.18.28	Biblioteca para reduzir o código boilerplate, como getters, setters, e construtores.
-Springfox Swagger	3.0.0	Ferramenta para gerar documentação de API RESTful automaticamente.
-Docker	24.0.2	Plataforma para desenvolver, enviar e executar aplicações em containers.
+Esta aplicação é um sistema de gerenciamento de alunos de uma escola, desenvolvido utilizando o framework **Spring Boot**. A aplicação possui um CRUD completo (Create, Read, Update, Delete) para gerenciar as informações dos alunos, incluindo nome, idade, notas dos semestres, nome do professor, e número da sala. O banco de dados H2 é utilizado para o desenvolvimento local, e o MySQL pode ser usado em produção.
 
-⚙️ Funcionalidades
-CRUD de Alunos:
-Criar Aluno: Registra um novo aluno no sistema.
-Listar Alunos: Exibe a lista completa de alunos cadastrados.
-Buscar Aluno por ID: Retorna os detalhes de um aluno específico com base no ID.
-Atualizar Aluno: Atualiza as informações de um aluno existente.
-Deletar Aluno: Remove um aluno do sistema.
+## 🚀 Tecnologias Utilizadas
 
-📁 Estrutura do Projeto
-bash
-Copiar código
+| Tecnologia           | Versão       | Descrição                                                                                         |
+|----------------------|--------------|---------------------------------------------------------------------------------------------------|
+| **Spring Boot**      | 3.3.3        | Framework Java que simplifica a criação de aplicações stand-alone, de produção pronta e robusta.  |
+| **Maven**            | 3.8.1        | Ferramenta de automação de compilação para projetos Java.                                         |
+| **H2 Database**      | 2.1.210      | Banco de dados em memória para desenvolvimento e testes rápidos.                                  |
+| **MySQL**            | 8.0.33       | Banco de dados relacional utilizado em produção.                                                  |
+| **Lombok**           | 1.18.28      | Biblioteca para reduzir o código boilerplate, como getters, setters, e construtores.              |
+| **Springfox Swagger**| 3.0.0        | Ferramenta para gerar documentação de API RESTful automaticamente.                                |
+| **Docker**           | 24.0.2       | Plataforma para desenvolver, enviar e executar aplicações em containers.                          |
+
+## ⚙️ Funcionalidades
+
+- **CRUD de Alunos**:
+  - **Criar Aluno**: Registra um novo aluno no sistema.
+  - **Listar Alunos**: Exibe a lista completa de alunos cadastrados.
+  - **Buscar Aluno por ID**: Retorna os detalhes de um aluno específico com base no ID.
+  - **Atualizar Aluno**: Atualiza as informações de um aluno existente.
+  - **Deletar Aluno**: Remove um aluno do sistema.
+
+## 📁 Estrutura do Projeto
+
+```bash
 ├── src
 │   ├── main
 │   │   ├── java/com/example/alunos
@@ -35,6 +39,7 @@ Copiar código
 │   │       └── data.sql         # Dados iniciais para a base H2
 │   └── test/java/com/example/alunos  # Testes unitários e de integração
 └── pom.xml                      # Arquivo de dependências do Maven
+
 
 🗂️ Endpoints da API
 Método HTTP	Endpoint	Descrição	Exemplo de Request
