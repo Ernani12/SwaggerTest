@@ -4,14 +4,12 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
 @Entity
 @Getter
 @Setter
-@AllArgsConstructor
 public class Aluno {
 
     @Id
@@ -22,7 +20,21 @@ public class Aluno {
     private double notaPrimeiroSemestre;
     private double notaSegundoSemestre;
     private String nomeProfessor;
-    private int numeroSala;
+    private int numeroSala; 
 
     // Getters e Setters
+    // Construtor padrão
+    public Aluno() {
+    }
+
+    // Construtor com parâmetros
+    public Aluno(Long id, String nome, int idade, double notaPrimeiroSemestre, double notaSegundoSemestre, String nomeProfessor, int numeroSala) {
+        this.id = id;
+        this.nome = nome;
+        this.idade = idade;
+        this.notaPrimeiroSemestre = notaPrimeiroSemestre;
+        this.notaSegundoSemestre = notaSegundoSemestre;
+        this.nomeProfessor = nomeProfessor;
+        this.numeroSala = numeroSala;
+    }
 }
