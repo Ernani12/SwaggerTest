@@ -53,9 +53,15 @@ Esta aplicação é um sistema de gerenciamento de alunos de uma escola, desenvo
 
 
 
-bash
+🛠️ Configuração do Ambiente
+Clone o Repositório:
+
+```bash
 Copiar código
+
 git clone https://github.com/seu-usuario/alunos.git
+```
+
 cd alunos
 Configuração do Banco de Dados:
 
@@ -68,7 +74,11 @@ mvn spring-boot:run
 Acessar a Documentação Swagger:
 
 Acesse http://localhost:8080/swagger-ui/index.html para visualizar e testar os endpoints da API.
-🐳 Docker
+                                                                                                                  |
+
+
+
+##🐳 Docker
 Para rodar a aplicação com Docker:
 
 Build da Imagem Docker:
@@ -81,8 +91,29 @@ Rodar o Container:
 bash
 Copiar código
 docker run -p 8080:8080 alunos-app
+                                                                                                                  |
+
+
+
 🧪 Testes
 Testes Unitários: Os testes unitários cobrem as funcionalidades principais da aplicação e podem ser rodados com o comando:
 bash
 Copiar código
 mvn test
+                                                                                                                  |
+
+
+
+📝 Contribuição
+Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
+
+markdown
+Copiar código
+
+### Observações:
+
+1. **A visualização correta** depende do editor ou visualizador Markdown que você está utilizando.
+2. **GitHub** ou **Visual Studio Code** com pré-visualização de Markdown são ótimos para ver a formatação correta.
+3. **Plataformas como GitHub** renderizam o Markdown de maneira confiável, então ao subir o arquivo `.md` para um repositório, você poderá ver a formatação correta.
+
+Isso deve resolver o problema de visualização da tabela e do conteúdo formatado.
