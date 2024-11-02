@@ -1,5 +1,5 @@
 
-# 📚 Aplicação CRUD de Alunos - Spring Boot
+# 📚 Aplicação CRUD de Alunos - Spring Boot para testes em SWAGGER
 
 Esta aplicação é um sistema de gerenciamento de alunos de uma escola, desenvolvido utilizando o framework **Spring Boot**. A aplicação possui um CRUD completo (Create, Read, Update, Delete) para gerenciar as informações dos alunos, incluindo nome, idade, notas dos semestres, nome do professor, e número da sala. O banco de dados H2 é utilizado para o desenvolvimento local, e o MySQL pode ser usado em produção.
 
